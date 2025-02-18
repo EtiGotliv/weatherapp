@@ -74,9 +74,4 @@ Once deployed to Kubernetes, you can access the service externally (e.g., from a
   - Additional useful weather insights.
 
 
-All the code, Docker configuration files, Kubernetes deployment files, and relevant scripts are located in this repository.
-
-## Contact
-
-For any questions or issues, feel free to reach out via [email or other contact method].
 

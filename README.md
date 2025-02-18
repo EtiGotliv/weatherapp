@@ -17,8 +17,8 @@ This project involves a service that imports weather data for random cities usin
 
 Clone the project repository to your local machine:
 ```bash
-git clone https://github.com/EtiGotliv/Retrieving-weather-data.git
-cd Retrieving-weather-data
+git clone https://github.com/EtiGotliv/weatherapp.git
+cd weatherapp
 ```
 
 ### 2. Build the Docker Image

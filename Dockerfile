@@ -1,6 +1,6 @@
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-WORKDIR /src
+WORKDIR /app
 
 COPY WeatherApp.csproj ./
 RUN dotnet restore "WeatherApp.csproj"

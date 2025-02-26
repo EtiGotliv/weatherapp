@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<CityService>();//add
 builder.Services.AddSingleton<DatabaseService>();
 builder.Services.AddSingleton<WeatherService>();
 
@@ -15,7 +16,8 @@ var weatherService = app.Services.GetRequiredService<WeatherService>();
 app.MapGet("/weather", async (HttpContext context) =>
 {
     var results = await databaseService.GetWeatherData();
-    await context.Response.WriteAsJsonAsync(results);
+    return Results.Ok(results);
+    //await context.Response.WriteAsJsonAsync(results);
 });
 
 app.MapGet("/weather/stats", async () =>
@@ -24,6 +26,11 @@ app.MapGet("/weather/stats", async () =>
     return Results.Ok(stats);
 });
 
+app.MapGet("/weather/{city}", async (string city) =>
+{
+    var stats = await databaseService.GetWeatherStatsCP(city);
+    return Results.Ok(stats);
+});
 
 _ = weatherService.RunBackgroundTask();
 

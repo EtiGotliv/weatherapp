@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\WeatherApp\\WeatherApp.csproj": {}
+    "C:\\Users\\1\\Documents\\GitHub\\weatherapp\\WeatherApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\WeatherApp\\WeatherApp.csproj": {
+    "C:\\Users\\1\\Documents\\GitHub\\weatherapp\\WeatherApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\WeatherApp\\WeatherApp.csproj",
+        "projectUniqueName": "C:\\Users\\1\\Documents\\GitHub\\weatherapp\\WeatherApp.csproj",
         "projectName": "WeatherApp",
-        "projectPath": "C:\\Users\\1\\WeatherApp\\WeatherApp.csproj",
+        "projectPath": "C:\\Users\\1\\Documents\\GitHub\\weatherapp\\WeatherApp.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1\\WeatherApp\\obj\\",
+        "outputPath": "C:\\Users\\1\\Documents\\GitHub\\weatherapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -45,10 +49,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [
